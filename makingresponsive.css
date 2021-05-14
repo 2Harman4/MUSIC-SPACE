@@ -1,0 +1,438 @@
+/* Have already used relative sizes and measurements to make the wesite responsive */
+    /* to achieve more accuracy, I am using media queries as bellow */
+
+/* this website is designed using desktop-first approach as for mobiles, apps are recommended */
+
+
+
+/*================ originally built for Laptop-L 1920px------------------------------------------------ */
+@media (max-width:1440px){
+   
+    /* profile image in header */
+    #profile img{
+        min-width: 46px;
+    }
+
+    /* now-playing song image */
+    #song-info img{
+        max-width: 58px;
+    }
+
+    /* single-playlist-screen */
+
+    /* outer div contains two divs  */
+    #left-div, #right-div{
+        padding-top: 10%;
+    }
+
+    #similar-artists{
+        margin-bottom:5% ;
+    }
+
+}
+
+/*========================== this is for Laptops-1024px------------------------------------------------------------------- */
+@media (max-width:1024px){
+
+    /* play button on songs in single-playlist screen */
+    .img-play i{
+        font-size: 1.5rem;
+    }
+
+    /* now-playing song image */
+    #song-info img{
+        max-width: 58px;
+    }
+
+    #queue-playlist .last-tab{
+        margin-bottom: 30%;
+    }
+
+    /* single-playlist-screen */
+
+    /* outer div contains two divs  */
+    #left-div, #right-div{
+        padding-top: 15%;
+    }
+
+       /* ---------fonts-single-playlist------ */
+       #right-div .artist-name{
+        font-family:'Quicksand', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+    
+    }
+
+    #right-div .followers{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8rem;
+    }
+    
+    #similar-artists{
+        margin-bottom:-10%;
+    }
+}
+
+/* ===============================this is for Tablet- 768px ----------------------------------------------------------- */
+
+@media (max-width:768px){
+
+    /* index page */
+
+    section{
+        margin-bottom: 4%;
+    }
+    .section-heading{
+
+        font-size: 1.2rem;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    /* navbar */
+    #fav-link{
+        width: 35%;
+    }
+    
+    header{
+        height: 9vh;
+    }
+
+    #searchbox i{
+        position: absolute;
+        padding-left: 1%;
+        padding-top: 1% ;
+        font-size: .8rem;
+    }
+
+    input::placeholder{
+        padding-left: 10%;
+        font-size: .8rem;
+    }
+
+    #profile img{
+      min-width: 35px;
+    }
+    
+    #bell{
+        width: 7%;
+    }
+
+    #bell i{
+        font-size: 1rem;
+    }
+    
+    /* ----all-content------------------ */
+    #all-content{
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    #queue-playlist{
+        display: none;
+    }
+
+    /* ---------now-playing section */
+    #now-playing:target{
+        height: 50px;
+    }
+
+    #controller-buttons{
+        width: 50%;
+    }
+
+    /* now-playing */
+    #song-info img{
+        width: 0;
+        height: 0;
+    }
+
+    #more-options{
+        width: 30%;
+    }
+    #more-options input{
+        width: 70%;
+    }
+
+    /* ---------single-playlist-screen */
+
+    #right-div{
+        display: none;
+    }
+    #left-div{
+        width: 100%;
+    }
+
+    #artist-profile{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+        margin-bottom: 5%;  
+    }
+
+    #coldplay{
+        min-width: 140px ;
+        margin-bottom: 5%;
+    }
+
+    #artist-info{
+        width: 100%;
+    }
+
+    #artist-info div:nth-child(3){
+        width: 100%;
+    }
+    
+    /* ------play all button----- */
+    #artist-info button{
+        width: 40%;
+        padding: 2%;
+    }
+
+    #tracks-albums{
+        margin-top: 3%;
+    }
+
+    /* -------------artist-songs------ */
+
+    .artist-songs{
+
+        padding-top: 2%;
+        padding-left: 2%;
+        margin-top:1.5%;
+       
+    }
+
+     /* ---------fonts-single-playlist------ */
+     .artist-name{
+        font-family:'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 300;
+    
+    }
+
+    .followers{
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8rem;
+    }
+    
+    #artist-info h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .9rem;
+        font-weight: 500;
+        margin-bottom: 5%;
+    }
+}
+
+
+/*================================= this is for smaller tablets-- 580px */
+
+@media(max-width:580px){
+
+
+    section{
+        margin-bottom: 5%;
+    }
+    .section-heading{
+
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    #profile{
+        padding-right: 5%;
+    }
+    
+    /* --latest--release-section-------- */
+
+    .content-tablets{
+    position: relative;
+    width: 45%;
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    }
+
+    /* --------popular-artists---------- */
+    #artist-tray{
+        flex-wrap: wrap;
+    }
+
+    .artists{
+        width: 20%;
+        margin: 2%;
+    }
+
+    /* ------------------station section----*/
+   
+    #stations{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: turquoise;
+        /* border: 2px solid green; */
+    }
+
+    #stations-tray{
+        display: none;
+    }
+    #disc i{
+        font-size: 5rem;
+    }
+
+    /* --------------------MOOD section------------- */
+    #mood{
+        height: 18vh;
+    }
+
+        /* the text depicting mood */
+    .mood-block p{
+        font-size: 1.2rem;
+    }
+
+    /* -----------------latest-songs-----languages---------- */
+
+    .latest-song-tray{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .song-tab{
+        width: 25%;
+        margin: 2%;
+    }
+    
+
+
+    /* ---------now-playing section */
+
+    #song-info{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #song-info img{
+        min-width: 45px;
+        height: auto;
+    }
+
+    #seek-bar{
+        display: none;
+    }
+
+    #more-options{
+        display: none;
+    }
+    #controller-buttons{
+        width: 80%;
+        margin-top: 7%;
+        margin-left: 30%;
+    }
+
+      /* single-playlist-screen */
+
+    #left-div{
+        margin-top: 10%;
+    }
+    #artist-profile{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+        margin-bottom: 5%;  
+    }
+
+    #coldplay{
+        min-width: 130px ;
+        margin-bottom: 5%;
+    }
+
+    #tracks-albums{
+        margin-top: 3%;
+    }
+    /* -------------artist-songs------ */
+
+    .artist-songs{
+        
+        padding: 1%;
+        margin-top:1.5%; 
+    }
+
+
+    /* -----fonts----- */
+    
+
+}
+
+/* =============optimising for mobiles-S 320px======= */
+
+@media (max-width:320px){
+    
+    /* navbar----------- */
+    #fav-link{
+        width: 40%;
+        margin: 0% 10% 0% 5%;
+        font-size: .9rem;
+    }
+    
+    /* searchbox-------- */
+    #searchbox{
+        width: 5%;
+        height: 38%;   
+    }
+
+    #searchbox i{
+       
+        font-size: 1rem;
+
+    }
+
+    #searchbox input{
+        display: none;
+    }
+    
+    #profile{
+        padding-right: 5%;
+    }
+
+    #all-content{
+       margin-top: 5%;
+   }
+
+   /* ---------latest-release--------------- */
+
+   .content-tablets{
+    position: relative;
+    width: 90%;
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    }
+
+
+    /* -------------now-playing------------- */
+
+    .vanish{
+        font-size: 0;
+    }
+    
+    .allow-this{
+        margin-left: 75%;
+        margin-top: 2%;
+    }
+   
+}

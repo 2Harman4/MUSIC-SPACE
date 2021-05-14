@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harmanjit Singh">
+    <meta name="description" content="Music Space is a desktop-first-website made with HTML and CSS attaining maximum resposiveness">
+    <meta name="keywords" content="songs,music,music space,latest hits">
+
+    
+    <title>Music Space</title>
+    <!-- this is for icon on the title bar -->
+    <link rel = "icon" type = "image/png" href = "files/MS-icon.png">
+    
+    <!-- linking its respective styling sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- this file makes it responsive -->
+    <link rel="stylesheet" href="makingresponsive.css">
+        <!-- used some icons from Font Awesome -->
+        <!-- make sure you are connected to the internet while opening this to see proper icons -->
+    <script src="https://kit.fontawesome.com/7ffff76e4d.js" crossorigin="anonymous"></script>
+        <!-- google fonts linked -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        
+        <!-- display of body is column flex -->
+        <!-- header contains the logo and the horizontal list -->
+    <header>
+        <div id="logo">
+            <a href="#"><img src="files/MS.png" alt="logo" ></a>
+        </div>
+        
+        
+        <ul id="horizontal-list">
+            <li id="fav-link"><a href="#">Favourites</a></li>
+            <li id="searchbox"><i class="fas fa-search"></i><input type="text-box" name="search" placeholder="Search"></li>
+            <li id="bell"><a href="#"><i class="far fa-lg fa-bell"></i></a></li>
+            <li id="profile"><div><img src="files/profile-image.jpg" alt="profile"></div></li>
+        </ul>
+        <!-- navbar completes here -->
+    </header>
+        
+            <!-- rest everything except now-playing section is in the main section -->
+
+    <main>
+        
+             <!-- the all-content section holds all the carousel, genres, latest songs and related sections -->
+
+        <section id="all-content">
+            
+<!-------------------------- CAROUSEL SECTION------------>
+            <section id="carousel">
+                    <!-- figure containes moveable images -->
+                <figure>
+                    <a href="#"><img src="files/carousel/img1.jpg" alt="img1"></a>
+                    <a href="#"><img src="files/carousel/img2.jpg" alt="img2"></a>
+                    <a href="#"><img src="files/carousel/img3.jpg" alt="img3"></a>
+                    <a href="#"><img src="files/carousel/img4.jpg" alt="img4"></a>
+                </figure> 
+                <!-- carousel completes here   -->
+            </section>
+
+  <!--------------------- LATEST RELEASE SECTION ---------->
+
+            <section id="latest-release" class="color-dense">
+                    <!-- section heading is common for all sections,so made a class -->
+               <h1 class="section-heading">LATEST RELEASE</h1>
+
+                    <!-- this content-box div is flex with flex wrap -->
+               <div id="content-box">
+                   
+                
+                <!-- contains 4-tablets -->
+                
+                <!-- 1st tablet -->
+                    <div class="content-tablets">
+
+                        <div class="content-pic">
+                            <img src="files/latest-release/img1.jpg" alt="cover">
+
+                             <!-- this play button will be visible when hovered over -->
+                         <!-- play button when triggered gonna activate now playing tab -->
+                            <a href="#now-playing"><i class="far fa-play-circle"></i></a>
+                        </div>
+                        
+                        <div class="names-and-options">
+                            <div>
+                                <p class="heading">Har Funn Maula</p>
+                                <p class="sub-heading">10 Mar,2021</p>
+                             </div>
+    
+                             <!-- creating 3 dots drop down list -->
+                             <div class="dropdown" >
+                                <input type="checkbox" id="checkbox_toggle1">
+                                <label for="checkbox_toggle1"><i class="fas fa-ellipsis-h"></i></label>
+                                <ul>
+                                    <li><a href="#now-playing">Play Now</a></li>
+                                    <li><a href="#">Add to Queue</a></li>
+                                    <li><a href="#">Add to Favourites</a></li>
+                                    <li><a href="#">Get Info</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- 2nd tablet -->
+                        <div class="content-tablets">
+
+                            <div class="content-pic">
+                                <img src="files/latest-release/img1.jpg" alt="cover">
+    
+                                 <!-- this play button will be visible when hovered over -->
+                             <!-- play button when triggered gonna activate now playing tab -->
+                                <a href="#now-playing"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="names-and-options">
+                                <div>
+                                    <p class="heading">Har Funn Maula</p>
+                                    <p class="sub-heading">10 Mar,2021</p>
+                                 </div>
+        
+                                 <!-- creating 3 dots drop down list -->
+                                 <div class="dropdown" >
+                                    <input type="checkbox" id="checkbox_toggle2">
+                                    <label for="checkbox_toggle2"><i class="fas fa-ellipsis-h"></i></label>
+                                    <ul>
+                                        <li><a href="#now-playing">Play Now</a></li>
+                                        <li><a href="#">Add to Queue</a></li>
+                                        <li><a href="#">Add to Favourites</a></li>
+                                        <li><a href="#">Get Info</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd tablet -->
+                        <div class="content-tablets">
+
+                            <div class="content-pic">
+                                <img src="files/latest-release/img1.jpg" alt="cover">
+    
+                                 <!-- this play button will be visible when hovered over -->
+                             <!-- play button when triggered gonna activate now playing tab -->
+                                <a href="#now-playing"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="names-and-options">
+                                <div>
+                                    <p class="heading">Har Funn Maula</p>
+                                    <p class="sub-heading">10 Mar,2021</p>
+                                 </div>
+        
+                                 <!-- creating 3 dots drop down list -->
+                                 <div class="dropdown" >
+                                    <input type="checkbox" id="checkbox_toggle3">
+                                    <label for="checkbox_toggle3"><i class="fas fa-ellipsis-h"></i></label>
+                                    <ul>
+                                        <li><a href="#now-playing">Play Now</a></li>
+                                        <li><a href="#">Add to Queue</a></li>
+                                        <li><a href="#">Add to Favourites</a></li>
+                                        <li><a href="#">Get Info</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th tablet -->
+                        <div class="content-tablets">
+
+                            <div class="content-pic">
+                                <img src="files/latest-release/img1.jpg" alt="cover">
+    
+                                 <!-- this play button will be visible when hovered over -->
+                             <!-- play button when triggered gonna activate now playing tab -->
+                                <a href="#now-playing"><i class="far fa-play-circle"></i></a>
+                            </div>
+                            
+                            <div class="names-and-options">
+                                <div>
+                                    <p class="heading">Har Funn Maula</p>
+                                    <p class="sub-heading">10 Mar,2021</p>
+                                 </div>
+        
+                                 <!-- creating 3 dots drop down list -->
+                                 <div class="dropdown" >
+                                    <input type="checkbox" id="checkbox_toggle4">
+                                    <label for="checkbox_toggle4"><i class="fas fa-ellipsis-h"></i></label>
+                                    <ul>
+                                        <li><a href="#now-playing">Play Now</a></li>
+                                        <li><a href="#">Add to Queue</a></li>
+                                        <li><a href="#">Add to Favourites</a></li>
+                                        <li><a href="#">Get Info</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+               </div>
+            </section>
+            
+<!-- --------------------POPULAR ARTISTS--------------------- -->
+           
+            <section id="popular-artists" class="color-dense">
+                <h1 class="section-heading">POPULAR ARTISTS</h1>
+
+                <div id="artist-tray">
+                    <div class="artists"><a href="single-playlist.html"><img src="files/popular-artists/arijit.jpg" alt="arijit"></a><p class="heading">Arijit </p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files/popular-artists/armaan.jpg" alt="armaan"></a><p class="heading">Armaan</p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files/popular-artists/bpraak.jpg" alt="bpraak"></a><p class="heading">Bpraak</p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files//popular-artists/diljit.jpg" alt="diljit"></a><p class="heading">Diljit</p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files//popular-artists/eminem.jpg" alt="eminem"></a><p class="heading">Eminem</p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files/popular-artists/rihaana.jpg" alt="rihaana"></a><p class="heading">Rihana</p></div>
+                    <div class="artists"><a href="single-playlist.html"><img src="files/popular-artists/shakira.jpg" alt="shakira"></a><p class="heading">Shakira</p></div>
+
+                </div>
+            </section>
+
+<!-- ------------------------------STATIONS SECTION----------------- -->
+            
+            <section id="stations">
+                <!-- rotating disc -->
+                <div id="disc"><a href="#"><i class="fas fa-compact-disc"></i></a></div> 
+
+                <div id="stations-tray">
+                    <div class="station-block"><a href="#"><img src="files/stations/1.jpg" alt="1"></a></div>
+                    <div class="station-block"><a href="#"><img src="files/stations/2.jpg" alt="2"></a></div>
+                    <div class="station-block"><a href="#"><img src="files/stations/3.jpg" alt="3"></a></div>
+                    <div class="station-block"><a href="#"><img src="files/stations/4.jpg" alt="4"></a></div>
+                    <div class="station-block"><a href="#"><img src="files/stations/5.jpg" alt="5"></a></div>
+                </div>
+                
+                
+            </section>
+
+<!-- ------------------------------------Mood section--------------- -->
+            <section id="mood">
+                <div class="mood-block"><div><a href="#"><p>PARTY</p></a></div></div>
+                <div class="mood-block"><div><a href="#"><p>ELECTRONIC</p></a></div></div>
+                <div class="mood-block"><div><a href="#"><p>ROAD TRIP</p></a></div></div>
+            </section>
+
+<!-- ------------------------------------------Latest English Section------------------------             -->
+
+            <section id="latest-english" class="latest-song">
+                 <h1 class="section-heading">LATEST ENGLISH</h1>
+                
+                <div class="latest-song-tray">
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/shape-of-you.jpg" alt="song1">
+                            <p class="heading">Shape of You</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/help-me-out.jpg" alt="song2">
+                            <p class="heading">Help Me Out</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/starboy.jpg" alt="song3">
+                            <p class="heading">Starboy</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/good-life.jpg" alt="song4">
+                            <p class="heading">Good Life</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/shape-of-you.jpg" alt="song5">
+                            <p class="heading">Shape of You</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+
+                    <div class="song-tab">
+                        <a href="#now-playing">
+                            <img src="files/latest-english/starboy.jpg" alt="song6">
+                            <p class="heading">Starboy</p>
+                            <p class="sub-heading">11 March 2016</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+<!-- ------------------------------------------Latest HIndi Section------------------------             -->
+
+            <section id="latest-hindi" class="latest-song">
+                <h1 class="section-heading">LATEST HINDI</h1>
+               
+               <div class="latest-song-tray">
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/bekhayali.jpg" alt="song1">
+                           <p class="heading">Bekhayali</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/drunknhigh.jpg" alt="song2">
+                           <p class="heading">Drunk n High</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/chahne-lage.jpg" alt="song3">
+                           <p class="heading">Chahne Lage</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/pachtaoge.jpg" alt="song4">
+                           <p class="heading">Pachtaoge</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/psyco-saiyan.jpg" alt="song5">
+                           <p class="heading">Psycho Saiyaan</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+
+                   <div class="song-tab">
+                       <a href="#now-playing">
+                           <img src="files/latest-hindi/ve-mahi.jpg" alt="song6">
+                           <p class="heading">Ve Mahi</p>
+                           <p class="sub-heading">11 March 2016</p>
+                       </a>
+                   </div>
+                   
+
+               </div>
+           </section>
+
+
+<!-- ------------------------------------------Latest punjabi Section------------------------             -->
+
+           <section id="latest-punjabi" class="latest-song ">
+            <h1 class="section-heading">LATEST PUNJABI</h1>
+           
+           <div class="latest-song-tray">
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/famous.jpg" alt="song1">
+                       <p class="heading">Famous</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/goat.jpg" alt="song2">
+                       <p class="heading">G.O.A.T</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/humble.jpg" alt="song3">
+                       <p class="heading">Humble</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/libaaas.jpg" alt="song4">
+                       <p class="heading">Libaas</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/no competition.jpg" alt="song5">
+                       <p class="heading">No Competition</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+
+               <div class="song-tab">
+                   <a href="#now-playing">
+                       <img src="files/latest-punjabi/sira e hou.jpg" alt="song6">
+                       <p class="heading">Sira e Hou</p>
+                       <p class="sub-heading">11 March 2016</p>
+                   </a>
+               </div>
+               
+
+           </div>
+       </section>
+        </section>
+<!-- =========================================QUEUE/PLAYLIST/FAVOURITES=================================================================     -->
+        <aside id="queue-playlist">
+            <div id="three-options" class="dropdown">
+                    <!-- each of these options is always on screen but visible when targeted -->
+                    <input type="checkbox" id="checkbox_toggle5">
+                    <label for="checkbox_toggle5"><i class="fas fa-ellipsis-h"></i></label>
+                    <ul>
+                        <li><a href="#queue">Queue</a></li>
+                        <li><a href="#playlist">Playlist</a></li>
+                        <li><a href="#favourites">Favourites</a></li>
+                    </ul>  
+            </div>
+            
+            <!-- ------------------------queue-------------- -->
+            <div id="queue" >
+                <h1 class="aside-heading section-heading">Queue</h1>
+
+                <div class="roll-list">
+                    <ol>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <li>
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-english/shape-of-you.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">Shape of You</p>
+                                        <p class="sub-heading">Ed Sheeran</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+
+                        <!-- last element of the list is given some bottom padding -->
+                        <li class="last-tab">
+                             <!-- clicking on roll-list tab will active now-playing section -->
+                            <a href="#now-playing">
+                                <div class="roll-list-tab">
+                                    <div>
+                                        <img src="files/latest-punjabi/goat.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="heading">G.O.A.T</p>
+                                        <p class="sub-heading">Diljit Dosanjh</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+
+<!-- ---------------------------------Playlist-----------------------------             -->
+            <div id="playlist" class="side-plate">
+                <h1 class="aside-heading section-heading">Playlist</h1>
+
+                <div class="roll-list">
+                    <ol>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- last element of the list is given some bottom padding -->
+                        <li class="last-tab">
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-english/starboy.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Starboy</p>
+                                    <p class="sub-heading">Weekend</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+<!-- ----------------------------------------------favourites----------------- -->
+            <div id="favourites" class="side-plate">
+                <h1 class="aside-heading section-heading">Favourites</h1>
+
+                <div class="roll-list">
+                    <ol>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="last-tab">
+                            <div class="roll-list-tab">
+                                <div>
+                                    <img src="files/latest-hindi/drunknhigh.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="heading">Drunk n High</p>
+                                    <p class="sub-heading">MellowD</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </div>
+
+
+
+        </aside>
+    </main>
+
+
+<!-- ===========================================================NOW PLAYING SECTION=========================================     -->
+    <section id="now-playing">
+        <!-- 1st container -->
+        <div id="song-info">
+            <img src="files/latest-english/starboy.jpg" alt="starboy">
+            <div>
+                <p class="heading">Starboy</p>
+                <p class="sub-heading">Weeknd</p>
+            </div>
+            <i class="far fa-heart now-playing-icons"></i>
+            <i class="fas fa-ban now-playing-icons"></i>
+
+        </div>
+
+        <!-- 2nd container -->
+        <div id="controller">
+            <div id="seek-bar">
+                <label for="seek" class="heading">02:22 &nbsp;</label>
+                <input type="range" id="seek">
+                <label for="seek" class="heading">&nbsp;04:44</label>
+            </div>
+            
+            <div id="controller-buttons">
+                <i class="fas fa-random now-playing-icons vanish"></i>
+                <i class="fas fa-step-backward now-playing-icons vanish"></i>
+                <i class="far fa-pause-circle now-playing-icons allow-this"></i>
+                <i class="fas fa-step-forward now-playing-icons vanish"></i>
+                <i class="fas fa-redo now-playing-icons vanish" ></i>
+            </div>
+
+           
+        </div>
+        <!-- 3rd container -->
+        <div id="more-options">
+            <div class="more-space"><i class="fas fa-list more-option-icons"></i></div>
+            <div class="more-space"><i class="fas fa-desktop more-option-icons"></i></div>
+            <div id="volume-range">
+                <i class="fas fa-volume-up more-option-icons"> &nbsp;</i>
+                <input type="range">
+            </div>
+            <div class="more-space"><i class="fas fa-expand-alt more-option-icons"></i></div>
+        </div>
+
+        <div></div>
+    </section>
+    
+
+  
+</body>
+</html>
